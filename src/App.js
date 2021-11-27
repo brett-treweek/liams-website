@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Image } from "./components/styles/Container.styled";
+import { ThemeProvider } from "styled-components";
+import Header from "./components/Header";
+import GlobalStyles from "./components/styles/Global";
+import {Flex} from './components/styles/Flex.styled';
+
+const theme = {
+  colors: {
+    header: "#fff",
+    body: "#fff",
+    footer: "#00333",
+    main: "##0d47a1",
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Header />
+        <Container>
+          <Flex jc='space-evenly'>
+            <h1>hello there</h1>
+            <Image src='./images/Liam.jpg'/>
+          </Flex>
+          
+        </Container>
+      </>
+    </ThemeProvider>
   );
 }
 
