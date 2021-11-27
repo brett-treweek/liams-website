@@ -5,7 +5,7 @@ export const StyledHeader =  styled.header`
     max-width: 100%;
     height: 6vh;
     padding: 0 50px;
-    margin: 0;
+    margin: 0 0 5rem 0;
 
     H1 {
         font-weight: 200;

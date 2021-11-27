@@ -18,7 +18,7 @@ export default function Header() {
           variant="contained"
           size="small"
         >
-          Get Started For Free
+          Get in Touch
         </Button>
       </Flex>
     </StyledHeader>
