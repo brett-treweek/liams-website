@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Bluedot = styled.span`
-color: #0077FF;
+color: ${({ theme }) => theme.colors.main};
 font-size: 150px;
 line-height: 1rem;
 `

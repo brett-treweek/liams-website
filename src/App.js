@@ -9,10 +9,11 @@ import content from "./content";
 
 const theme = {
   colors: {
-    nav: "#70B8FF",
-    body: "#F9F9F9",
+    nav: "#fff",
+    header: "#3959B5",
+    body: "#fff",
     footer: "#00333",
-    main: "##0d47a1",
+    main: "#0d47a1",
   },
 };
 
