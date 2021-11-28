@@ -1,18 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 1000px;
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 50px auto;
+  height: 5000px;
 
-    h1{
-        text-align: center;
-        font-size: 70px;
-        font-weight: 300;
-        margin-top: 0;
-    }
-    `
-    export const Image = styled.img`
-    width: 450px;
-    `
+
+`;
+
+export const Image = styled.img`
+  width: 375px;
+`;

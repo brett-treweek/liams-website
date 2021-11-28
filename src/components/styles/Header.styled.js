@@ -1,16 +1,19 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const StyledHeader =  styled.header`
-    background-color: ${({theme}) => theme.colors.header};
-    max-width: 100%;
-    height: 6vh;
-    padding: 0 50px;
-    margin: 0 0 5rem 0;
+export const StyledHeader = styled.header`
+  width: 100%;
+  background-color: #fff;
+    /* border-radius: 15px; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: 0;
+    
+  }
 
-    H1 {
-        font-weight: 200;
-        font-size: 25px;
-        margin: 0 1rem;
-    }
-`
-
+  p {
+    width: 375px;
+  }
+`;
