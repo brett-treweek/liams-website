@@ -19,7 +19,7 @@ const Header = () => {
               </p>
             </div>
 
-            <Image src="./images/LiamPhotoshop.png" />
+            <Image src="./images/LiamPhotoshop.png" alt="portrait of Liam" />
           </Flex>
         </StyledHeader>
      );

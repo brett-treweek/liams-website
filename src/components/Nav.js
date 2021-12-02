@@ -1,4 +1,4 @@
-import { Logo, StyledNav } from "./styles/Nav.styled";
+import { StyledNav } from "./styles/Nav.styled";
 import { Flex } from "./styles/Flex.styled";
 import Button from "@mui/material/Button";
 import HomeIcon from "@mui/icons-material/Home";
@@ -10,7 +10,7 @@ export default function Nav() {
       <Flex>
         <Flex>
           <HomeIcon fontSize="large" sx={{ color: blue[900] }} />
-          <h1>Own a Home WA</h1>
+          <h1>Own a Home in Western Australia </h1>
         </Flex>
         <Button
           className="btn"

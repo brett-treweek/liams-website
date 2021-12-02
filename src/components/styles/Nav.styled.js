@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-  background-color: ${({ theme }) => theme.colors.nav};
+  background-color: ${({ theme }) => theme.colors.body};
   width: 1400px;
   max-width: 100%;
   height: 7vh;
@@ -17,5 +17,8 @@ export const StyledNav = styled.nav`
     font-size: 20px;
     margin: 0 1rem;
     color: #000;
+  }
+  @media (max-width: 400px){
+    display: none;
   }
 `;

@@ -19,6 +19,7 @@ export const StyledCard = styled.div`
     h2{
         text-align: center;
         font-weight: 400;
+        color: blue;
     }
 
     p{
@@ -29,5 +30,18 @@ export const StyledCard = styled.div`
 
     & > div{
         flex: 1;
+    }
+
+    @media (max-width: 400px){
+        flex-direction: column;
+        padding: 20px;
+        p{
+            text-align: center;
+            font-size: 18px;
+            margin: 10px auto;
+        }
+        h2{
+            font-size: 25px;
+        }
     }
 `

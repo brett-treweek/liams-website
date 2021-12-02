@@ -1,4 +1,4 @@
-import { Container, Image } from "./components/styles/Container.styled";
+import { Container } from "./components/styles/Container.styled";
 import { ThemeProvider } from "styled-components";
 import Nav from "./components/Nav";
 import GlobalStyles from "./components/styles/Global";
@@ -9,9 +9,9 @@ import content from "./content";
 
 const theme = {
   colors: {
-    nav: "#fff",
-    header: "#3959B5",
-    body: "#fff",
+    nav: "#E9FCFF",
+    header: "#000",
+    body: "#FDFDFD",
     footer: "#00333",
     main: "#0d47a1",
   },

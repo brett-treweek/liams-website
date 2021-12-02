@@ -10,4 +10,8 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   width: 375px;
+
+  @media (max-width: 400px){
+    width: 300px;
+  }
 `;

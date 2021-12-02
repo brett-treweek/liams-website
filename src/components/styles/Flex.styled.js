@@ -13,4 +13,8 @@ export const Flex = styled.div`
         text-align: justify;
     }
 
+    @media (max-width: 400px){
+        flex-direction: column;
+    }
+
 `
