@@ -9,8 +9,9 @@ export const StyledNav = styled.nav`
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 100;
+  /* z-index: 100; */
   margin: 0 auto;
+  /* display: none; */
 
   H1 {
     font-weight: 400;
