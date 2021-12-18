@@ -6,6 +6,8 @@ import GlobalStyles from "./components/styles/Global";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import content from "./content";
+import Contact from "./components/Contact";
+
 
 const theme = {
   colors: {
@@ -29,6 +31,7 @@ function App() {
             <Card key={index} item={item} />
           ))}
         </Container>
+        <Contact />
       </>
     </ThemeProvider>
   );

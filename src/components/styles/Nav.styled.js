@@ -19,6 +19,7 @@ export const StyledNav = styled.nav`
     margin: 0 1rem;
     color: #000;
   }
+
   @media (max-width: 400px){
     display: none;
   }
