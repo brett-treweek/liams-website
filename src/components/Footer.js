@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <Flex jc='space-evenly'>
-        <p>Socioal Links go here</p>
+        <p>Social Links go here</p>
       </Flex>
     </StyledFooter>
   );

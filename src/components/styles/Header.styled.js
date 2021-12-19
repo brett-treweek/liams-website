@@ -5,8 +5,8 @@ export const StyledHeader = styled.header`
   max-width: 90%;
   /* height: 50vh; */
   margin: 50px auto;
-  /* border-radius: 15px; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
+  /* border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
 
 
   h1 {
@@ -26,7 +26,7 @@ export const StyledHeader = styled.header`
   p {
     /* width: 440px; */
     max-width: 90vw;
-    text-align: center;
+    text-align: justify;
   }
 
   a {

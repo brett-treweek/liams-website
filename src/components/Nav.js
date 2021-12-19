@@ -6,7 +6,7 @@ export default function Nav() {
 
   const scrollToBottom = () => {
     window.scroll({
-      top: 2000,
+      top: 4000,
       behavior: 'smooth',
     })
   }
@@ -15,7 +15,7 @@ export default function Nav() {
     <StyledNav>
       <Flex>
         <Flex>
-          <h1>Liam Winfield</h1>
+          <h1>Liam Whinfield</h1>
         </Flex>
         <Button
           onClick={scrollToBottom}

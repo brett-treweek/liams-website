@@ -16,7 +16,7 @@ const Header = () => {
             Liam<Bluedot>.</Bluedot>
           </h1>
           <p>
-            I work for <a href="https://newsensationhomes.com.au/" target="_blank" rel="noreferrer">New Sensation Homes</a> .
+            I'm a sales consultant at <a href="https://newsensationhomes.com.au/" target="_blank" rel="noreferrer">New Sensation Homes</a> where it's my job to make home ownership as easy and stress free as possible.
           </p>
           <p>
             Let me help you build your dream home. Its easier and more fun than you think. 
