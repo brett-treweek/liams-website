@@ -1,18 +1,24 @@
 import { StyledNav } from "./styles/Nav.styled";
 import { Flex } from "./styles/Flex.styled";
 import Button from "@mui/material/Button";
-import HomeIcon from "@mui/icons-material/Home";
-import { blue } from "@mui/material/colors";
 
 export default function Nav() {
+
+  const scrollToBottom = () => {
+    window.scroll({
+      top: 2000,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <StyledNav>
       <Flex>
         <Flex>
-          <HomeIcon fontSize="large" sx={{ color: blue[900] }} />
-          <h1>Own a Home in Western Australia </h1>
+          <h1>Liam Winfield</h1>
         </Flex>
         <Button
+          onClick={scrollToBottom}
           className="btn"
           color="primary"
           variant="contained"

@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Card from "./components/Card";
 import content from "./content";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 const theme = {
@@ -15,7 +16,7 @@ const theme = {
     header: "#000",
     body: "#FDFDFD",
     footer: "#00333",
-    main: "#0d47a1",
+    main: "#1976d2",
   },
 };
 
@@ -32,6 +33,7 @@ function App() {
           ))}
         </Container>
         <Contact />
+        <Footer/>
       </>
     </ThemeProvider>
   );

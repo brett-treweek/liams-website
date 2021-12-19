@@ -19,7 +19,7 @@ export const StyledCard = styled.div`
     h2{
         text-align: center;
         font-weight: 400;
-        color: blue;
+        color: #1976d2;
     }
 
     p{

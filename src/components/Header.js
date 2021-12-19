@@ -3,6 +3,7 @@ import { Flex } from "./styles/Flex.styled";
 import { Bluedot } from "./styles/Bluedot.styled";
 import { Image } from "./styles/Container.styled";
 
+
 const Header = () => {
   return (
     <StyledHeader>
@@ -15,10 +16,13 @@ const Header = () => {
             Liam<Bluedot>.</Bluedot>
           </h1>
           <p>
-            Let me walk you through how to build your first home or your dream
-            home. Its easier and more fun than you think.
+            I work for <a href="https://newsensationhomes.com.au/" target="_blank" rel="noreferrer">New Sensation Homes</a> .
           </p>
-          <a href="https://newsensationhomes.com.au/" target="_blank" rel="noreferrer">New Sensation Homes Link in new tab</a>
+          <p>
+            Let me help you build your dream home. Its easier and more fun than you think. 
+          </p>
+          
+          
         </div>
 
         <Image src="./images/LiamPhotoshop.png" alt="portrait of Liam" />

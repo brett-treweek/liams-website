@@ -6,7 +6,6 @@ export const Flex = styled.div`
     width: 100%;
     align-items: center;
     justify-content: ${({jc}) => jc};
-    background-image: src='./images/home.jpg';
 
     p{
         font-size: 1.5rem;

@@ -29,6 +29,11 @@ export const StyledHeader = styled.header`
     text-align: center;
   }
 
+  a {
+    text-align: center;
+    color: #1976d2;
+  }
+
   @media (max-width: 400px){
     h1{
       font-size: 55px;
