@@ -14,7 +14,7 @@ export default function Nav() {
         </Flex>
         <Button
           className="btn"
-          color="secondary"
+          color="primary"
           variant="contained"
           size="small"
         >

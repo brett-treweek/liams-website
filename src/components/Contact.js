@@ -1,51 +1,67 @@
 import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 import { StyledContact } from "./styles/Contact.styled";
+import emailjs from "emailjs-com"
 
 
 const Contact = () => {
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_r1o1bg2', 'template_lff938p', e.target, 'user_EUQIT1kNZJfWl6ouFWojf')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+
+    console.log('you submited email')
+  }
+
   return (
     <StyledContact>
       <div>
-        <h1>Get in Touch</h1>
+        <h1>Any Questions? Im here to help.</h1>
       </div>
-      <div>
-        <form action="#">
-          <label htmlFor="name">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            autoComplete="name"
-            placeholder="Please enter your Name"
-          />
-
-          <label htmlFor="email">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            autoComplete="email"
-            placeholder="Please enter your Email"
-          />
-
-          <label htmlFor="message">
-            Message
-          </label>
-          <textarea
-            type="text"
-            id="message"
-            cols="50"
-            rows="20"
-            placeholder="Please message me"
-          />
-
-          <Button type="submit" value="Submit">
-            Submit
-          </Button>
-        </form>
-      </div>
+      <Box component="form"  Validate onSubmit={sendEmail}>
+        <TextField
+          name="name"
+          className="textField"
+          label="name"
+          variant="outlined"
+          fullWidth
+          required
+        />
+        <TextField
+          name="email"
+          className="textField"
+          label="email"
+          variant="outlined"
+          fullWidth
+          required
+          type="email"
+        />
+        <TextField
+          name="message"
+          className="textField"
+          label="Message"
+          rows={4}
+          multiline
+          fullWidth
+          required
+        />
+        <Button
+          className="textField"
+          type="submit"
+          variant="contained"
+          size="large"
+          fullWidth
+        >
+          Submit
+        </Button>
+      </Box>
     </StyledContact>
   );
 };

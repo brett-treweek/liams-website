@@ -16,9 +16,9 @@ const Header = () => {
           </h1>
           <p>
             Let me walk you through how to build your first home or your dream
-            home. It’s easier and more fun than you think.
+            home. Its easier and more fun than you think.
           </p>
-          <a href="https://newsensationhomes.com.au/" target="_blank">New Sensation Homes Link in new tab</a>
+          <a href="https://newsensationhomes.com.au/" target="_blank" rel="noreferrer">New Sensation Homes Link in new tab</a>
         </div>
 
         <Image src="./images/LiamPhotoshop.png" alt="portrait of Liam" />
