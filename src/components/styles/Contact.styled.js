@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContact = styled.div`
   width: 1200px;
   max-width: 90vw;
-  padding: 40px;
+  padding: 40px 40px 70px;
   margin: 50px auto;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);

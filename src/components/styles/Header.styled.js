@@ -70,6 +70,20 @@ export const StyledHeader = styled.header`
     color: ${({ theme }) => theme.colors.tertiary};
   }
 
+  @media (max-width: 1150px){
+    p{
+      max-width: 40vw;
+    }
+
+    button {
+    background-color: ${({ theme }) => theme.colors.secondary};
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    margin: 20px;
+  }
+  }
+
   @media (max-width: 450px){
 
     height: auto;
@@ -84,7 +98,6 @@ export const StyledHeader = styled.header`
     height: 100px;
     font-size: 15px;
     margin: 20px;
-    
   }
 
     h1{
@@ -94,6 +107,7 @@ export const StyledHeader = styled.header`
       font-size: 45px;
     } 
     p{
+      max-width: 80vw;
       font-size: 18px;
     }
     img {
