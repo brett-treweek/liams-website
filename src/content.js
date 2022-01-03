@@ -23,7 +23,7 @@ const content = [
     {
         id: 4,
         title: 'Every Step Made Easy' ,
-        body: 'We are a one-stop-shop for finance, land and a home of your own. Getting finance for a home is one of the hardest types of finance to get, with the right guidance we can break it down and get you into a home of your own.',
+        body: 'We are a one-stop-shop for finance and "house and land" packages. Getting finance for a home can be difficult and stressful, I can help you break it down and get you into your own home.',
         image: 'keys.jpg',
         alt: 'keys to a house'
     }

@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     background: ${({theme}) => theme.colors.body};
     font-family: 'Roboto', sans-serif;
@@ -16,12 +20,11 @@ body{
 }
 
 p{
-    opacity: 0.8;
     line-height: 1.5;
 }
 
 img{
-    max-width: 100%;
+    max-width: 90vw;
 }
 
 `

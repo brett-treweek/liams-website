@@ -19,7 +19,7 @@ export const StyledCard = styled.div`
     h2{
         text-align: center;
         font-weight: 400;
-        color: #1976d2;
+        color: ${({ theme }) => theme.colors.secondary};
     }
 
     p{

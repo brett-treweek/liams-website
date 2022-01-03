@@ -4,16 +4,12 @@ export const Flex = styled.div`
     display: flex;
     height: 100%;
     width: 100%;
-    align-items: center;
+    align-items: ${({ai}) => ai};
     justify-content: ${({jc}) => jc};
 
-    p{
-        font-size: 1.5rem;
-        text-align: justify;
-    }
 
     @media (max-width: 400px){
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
 `

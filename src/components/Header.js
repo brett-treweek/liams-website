@@ -1,31 +1,75 @@
 import { StyledHeader } from "./styles/Header.styled";
 import { Flex } from "./styles/Flex.styled";
 import { Bluedot } from "./styles/Bluedot.styled";
-import { Image } from "./styles/Container.styled";
-
+import { Image } from "./styles/Header.styled";
+import Button from "@mui/material/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
+  const scrollToBottom = () => {
+    window.scroll({
+      top: 4000,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <StyledHeader>
-      <Flex jc="space-evenly">
+      <Flex jc="space-evenly" ai="center">
         <div>
-          <h2>
-            Hello, I'm 
-          </h2>
+          <h2>Hello, I'm</h2>
           <h1>
             Liam<Bluedot>.</Bluedot>
           </h1>
           <p>
-            I'm a sales consultant at <a href="https://newsensationhomes.com.au/" target="_blank" rel="noreferrer">New Sensation Homes</a> where it's my job to make home ownership as easy and stress free as possible.
+            I'm a new home sales consultant at{" "}
+            <a
+              href="https://newsensationhomes.com.au/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              New Sensation Homes
+            </a>{" "}
+            where it's my job to make home ownership as easy and stress free as
+            possible.
           </p>
           <p>
-            Let me help you build your dream home. Its easier and more fun than you think. 
+            Let me help you build your dream home. Its easier and more fun than
+            you think.
           </p>
-          
-          
+          <Flex jc="space-around">
+            <Button
+              onClick={scrollToBottom}
+              className="btn"
+              variant="contained"
+            >
+              Get in Touch
+            </Button>
+          </Flex>
+      <Flex jc="space-evenly">
+        <div>
+          <a
+            href="https://www.instagram.com/ownahome_wa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagramSquare} />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/liam-whinfield-658657165/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </div>
+      </Flex>
         </div>
 
-        <Image src="./images/LiamPhotoshop.png" alt="portrait of Liam" />
+        <Image src="./images/Liam.jpg" alt="portrait of Liam" />
       </Flex>
     </StyledHeader>
   );
