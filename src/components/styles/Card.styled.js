@@ -14,6 +14,7 @@ export const StyledCard = styled.div`
 
     img {
     width: 500px;
+    max-width: 80vw;
   }
 
     h2{
@@ -32,12 +33,12 @@ export const StyledCard = styled.div`
         flex: 1;
     }
 
-    @media (max-width: 400px){
+    @media (max-width: 450px){
         flex-direction: column;
         padding: 20px;
         p{
-            text-align: center;
-            font-size: 18px;
+            text-align: justify;
+            font-size: 16px;
             margin: 10px auto;
         }
         h2{

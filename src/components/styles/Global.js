@@ -23,9 +23,6 @@ p{
     line-height: 1.5;
 }
 
-img{
-    max-width: 90vw;
-}
 
 `
 export default GlobalStyles

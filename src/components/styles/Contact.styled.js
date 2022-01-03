@@ -16,10 +16,6 @@ export const StyledContact = styled.div`
     margin: 0 0 40px;
   }
 
-  h1 span {
-    font-size: 40px;
-  }
-
   .textField {
     margin: 10px;
     max-width: 90%;
@@ -31,4 +27,13 @@ export const StyledContact = styled.div`
   button:hover {
     background-color: ${({ theme }) => theme.colors.tertiary};
   }
+
+  @media (max-width: 400px){
+    padding: 40px 0;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
 `;

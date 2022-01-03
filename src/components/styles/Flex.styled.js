@@ -9,7 +9,7 @@ export const Flex = styled.div`
 
 
     @media (max-width: 400px){
-        flex-direction: column-reverse;
+        /* flex-direction: column; */
     }
 
 `

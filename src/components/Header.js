@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <Flex jc="space-evenly" ai="center">
+      <Flex jc="space-evenly" ai="center" id="flexContainer">
         <div>
           <h2>Hello, I'm</h2>
           <h1>

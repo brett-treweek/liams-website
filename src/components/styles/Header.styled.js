@@ -7,12 +7,10 @@ export const Image = styled.img`
 
 export const StyledHeader = styled.header`
   width: 1200px;
-  max-width: 90%;
+  max-width: 90vw;
   height: 90vh;
   margin: 50px auto;
   align-items: flex-start;
-  /* border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
 
 
   h1 {
@@ -72,10 +70,22 @@ export const StyledHeader = styled.header`
     color: ${({ theme }) => theme.colors.tertiary};
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 450px){
 
+    height: auto;
 
+    #flexContainer {
+      flex-direction: column;
+    }
 
+    button {
+    background-color: ${({ theme }) => theme.colors.secondary};
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    margin: 20px;
+    
+  }
 
     h1{
       font-size: 55px;
@@ -87,7 +97,7 @@ export const StyledHeader = styled.header`
       font-size: 18px;
     }
     img {
-      max-width: 90vw;
+      max-width: 80vw;
     }
   }
 `;
