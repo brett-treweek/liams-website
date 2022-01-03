@@ -8,7 +8,7 @@ export const Image = styled.img`
 export const StyledHeader = styled.header`
   width: 1200px;
   max-width: 90%;
-  height: 100vh;
+  height: 90vh;
   margin: 50px auto;
   align-items: flex-start;
   /* border-radius: 15px;
@@ -49,6 +49,7 @@ export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.secondary};
     width: 150px;
     height: 150px;
+    font-size: 20px;
     border-radius: 50%;
     margin: 40px;
     transition: all 0.4s ease;

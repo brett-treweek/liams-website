@@ -1,6 +1,5 @@
 import { Container } from "./components/styles/Container.styled";
 import { ThemeProvider } from "styled-components";
-// import Nav from "./components/Nav";
 import GlobalStyles from "./components/styles/Global";
 import Header from "./components/Header";
 import Card from "./components/Card";
@@ -27,7 +26,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        {/* <Nav /> */}
         <Header />
         <Container>
           {content.map((item, index) => (

@@ -2,7 +2,8 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import { StyledContact } from "./styles/Contact.styled";
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
+
 
 
 const Contact = () => {
@@ -23,7 +24,7 @@ const Contact = () => {
   return (
     <StyledContact>
       <div>
-        <h1>Any Questions? Im here to help.</h1>
+        <h1>Lets get in touch</h1>
       </div>
       <Box component="form"  Validate onSubmit={sendEmail}>
         <TextField

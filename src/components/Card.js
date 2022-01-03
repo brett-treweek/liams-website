@@ -1,4 +1,6 @@
 import { StyledCard } from "./styles/Card.styled";
+import { Flex } from "./styles/Flex.styled";
+
 
 export default function Card({ item: { id, title, body, image, alt } }) {
   return (
@@ -7,9 +9,9 @@ export default function Card({ item: { id, title, body, image, alt } }) {
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
-      <div>
+      <Flex ai="center" jc="center">
         <img src={`./images/${image}`} alt={alt}></img>
-      </div>
+      </Flex>
     </StyledCard>
   );
 }

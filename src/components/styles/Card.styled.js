@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledCard = styled.div`
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,9 +13,8 @@ export const StyledCard = styled.div`
     flex-direction: ${({layout}) => layout || 'row'};
 
     img {
-        /* width: 0%; */
-        margin: 0 20px,
-    }
+    width: 500px;
+  }
 
     h2{
         text-align: center;
