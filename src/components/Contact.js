@@ -3,34 +3,48 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import { StyledContact } from "./styles/Contact.styled";
 import emailjs from "emailjs-com";
-
-
+import Alert from "@mui/material/Alert";
 
 const Contact = () => {
+  // const successAlert = () => {
+  //   return (
+
+  //   );
+  // };
 
   const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs.sendForm('service_r1o1bg2', 'template_lff938p', e.target, 'user_EUQIT1kNZJfWl6ouFWojf')
-      .then((result) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_r1o1bg2",
+        "template_lff938p",
+        e.target,
+        "user_EUQIT1kNZJfWl6ouFWojf"
+      )
+      .then(
+        (result) => {
+          // successAlert();
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
+        }
+      );
+    e.target.reset();
 
-    console.log('you submited email')
-  }
+    console.log("you submited email");
+  };
 
   return (
     <StyledContact>
       <div>
         <h1>Lets get in touch</h1>
       </div>
-      <Box component="form"  Validate onSubmit={sendEmail}>
+      <Box component="form" Validate onSubmit={sendEmail}>
         <TextField
           name="name"
           className="textField"
-          label="name"
+          label="Name"
           variant="outlined"
           fullWidth
           required
@@ -38,11 +52,20 @@ const Contact = () => {
         <TextField
           name="email"
           className="textField"
-          label="email"
+          label="Email"
           variant="outlined"
           fullWidth
           required
           type="email"
+        />
+        <TextField
+          name="phone"
+          className="textField"
+          label="Phone Number"
+          variant="outlined"
+          fullWidth
+          required
+          type="phone"
         />
         <TextField
           name="message"
@@ -63,6 +86,9 @@ const Contact = () => {
           Submit
         </Button>
       </Box>
+      <Alert id="alert" variant="outlined" severity="success">
+        Email Sent - Ill get back soon!
+      </Alert>
     </StyledContact>
   );
 };

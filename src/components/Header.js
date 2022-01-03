@@ -4,7 +4,11 @@ import { Bluedot } from "./styles/Bluedot.styled";
 import { Image } from "./styles/Header.styled";
 import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagramSquare,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   const scrollToBottom = () => {
@@ -47,26 +51,35 @@ const Header = () => {
               Get in Touch
             </Button>
           </Flex>
-      <Flex jc="space-evenly">
-        <div>
-          <a
-            href="https://www.instagram.com/ownahome_wa"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagramSquare} />
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/liam-whinfield-658657165/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </div>
-      </Flex>
+          <Flex jc="space-evenly">
+            <div>
+              <a
+                href="https://www.instagram.com/ownahome_wa"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faInstagramSquare} />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/liam-whinfield-658657165/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.facebook.com/ownahomeperth/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faFacebookSquare} />
+              </a>
+            </div>
+          </Flex>
         </div>
 
         <Image src="./images/Liam.jpg" alt="portrait of Liam" />

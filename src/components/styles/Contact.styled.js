@@ -28,6 +28,15 @@ export const StyledContact = styled.div`
     background-color: ${({ theme }) => theme.colors.tertiary};
   }
 
+  #alert {
+    color: #fff;
+    background-color: green;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* display: none; */
+  }
+
   @media (max-width: 400px){
     padding: 40px 0;
 
