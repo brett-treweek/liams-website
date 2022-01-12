@@ -1,7 +1,7 @@
 import { StyledFooter } from "./styles/Footer.styled";
 import { Flex } from "./styles/Flex.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons"
 
 export default function Footer() {
@@ -26,6 +26,15 @@ export default function Footer() {
             <FontAwesomeIcon icon={faLinkedin} className="link"/>
           </a>
         </div>
+        <div>
+              <a
+                href="https://www.facebook.com/ownahomeperth/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faFacebookSquare} className="link" />
+              </a>
+            </div>
       </Flex>
       <Flex jc="center" ai="center">
       <FontAwesomeIcon icon={faCopyright} id="copyright"/>

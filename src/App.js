@@ -10,14 +10,14 @@ import Footer from "./components/Footer";
 
 const theme = {
   colors: {
-    dark: "#000",
+    dark: "#808080",
     nav: "#E9FCFF",
     header: "#000",
     body: "#FDFDFD",
     footer: "#00333",
     main: "#1976d2",
-    secondary: "#002060",
-    tertiary: "#FF9400"
+    secondary: "#1FAAFF",
+    tertiary: "#4109FD"
   },
 };
 

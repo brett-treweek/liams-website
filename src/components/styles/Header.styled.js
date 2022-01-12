@@ -3,17 +3,17 @@ import styled from "styled-components";
 export const Image = styled.img`
   width: 500px;
   max-width: 40vw;
-  `
+`;
 
 export const StyledHeader = styled.header`
   width: 1200px;
   max-width: 90vw;
-  height: 90vh;
-  margin: 50px auto;
+  height: 75vh;
+  margin: 20px auto;
   align-items: flex-start;
 
-
   h1 {
+    /* color: #fff; */
     text-align: center;
     font-size: 80px;
     font-weight: 500;
@@ -25,12 +25,15 @@ export const StyledHeader = styled.header`
     font-size: 55px;
     font-weight: 400;
     margin: 0;
+    /* color: #fff; */
   }
 
   p {
     width: 500px;
     max-width: 90vw;
     text-align: justify;
+    z-index: 10;
+    /* color: #fff; */
   }
 
   a {
@@ -40,22 +43,21 @@ export const StyledHeader = styled.header`
   }
 
   a:hover {
-    color: ${({ theme }) => theme.colors.tertiary}
+    color: ${({ theme }) => theme.colors.tertiary};
   }
 
   button {
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.tertiary};
     width: 150px;
     height: 150px;
     font-size: 20px;
     border-radius: 50%;
-    margin: 40px;
+    margin: 40px 40px 80px 40px;
     transition: all 0.4s ease;
   }
 
   button:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
-    
+    background-color: ${({ theme }) => theme.colors.secondary};
   }
 
   svg {
@@ -64,28 +66,28 @@ export const StyledHeader = styled.header`
     text-decoration: none;
     transition: all 0.3s ease-in;
     margin: 20px auto;
+    z-index: 10;
   }
 
   svg:hover {
     color: ${({ theme }) => theme.colors.tertiary};
   }
 
-  @media (max-width: 1150px){
-    p{
+  @media (max-width: 1150px) {
+    p {
       max-width: 40vw;
     }
 
     button {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 100px;
-    height: 100px;
-    font-size: 15px;
-    margin: 20px;
-  }
+      background-color: ${({ theme }) => theme.colors.secondary};
+      width: 100px;
+      height: 100px;
+      font-size: 15px;
+      margin: 20px;
+    }
   }
 
-  @media (max-width: 450px){
-
+  @media (max-width: 450px) {
     height: auto;
 
     #flexContainer {
@@ -93,20 +95,20 @@ export const StyledHeader = styled.header`
     }
 
     button {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 100px;
-    height: 100px;
-    font-size: 15px;
-    margin: 20px;
-  }
+      background-color: ${({ theme }) => theme.colors.secondary};
+      width: 100px;
+      height: 100px;
+      font-size: 15px;
+      margin: 20px;
+    }
 
-    h1{
+    h1 {
       font-size: 55px;
-    } 
+    }
     h2 {
       font-size: 45px;
-    } 
-    p{
+    }
+    p {
       max-width: 80vw;
       font-size: 18px;
     }

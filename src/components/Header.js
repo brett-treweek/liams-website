@@ -9,6 +9,7 @@ import {
   faInstagramSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { StyledLogo } from "./styles/Logo.styled";
 
 const Header = () => {
   const scrollToBottom = () => {
@@ -20,6 +21,9 @@ const Header = () => {
 
   return (
     <StyledHeader>
+      <StyledLogo>
+        <img src="./images/Logo.jpg" alt="" />
+      </StyledLogo>
       <Flex jc="space-evenly" ai="center" id="flexContainer">
         <div>
           <h2>Hello, I'm</h2>
@@ -27,16 +31,8 @@ const Header = () => {
             Liam<Bluedot>.</Bluedot>
           </h1>
           <p>
-            I'm a new home sales consultant at{" "}
-            <a
-              href="https://newsensationhomes.com.au/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              New Sensation Homes
-            </a>{" "}
-            where it's my job to make home ownership as easy and stress free as
-            possible.
+            I'm a new home sales consultant where it's my job to make home
+            ownership as easy and stress free as possible.
           </p>
           <p>
             Let me help you build your dream home. Its easier and more fun than
