@@ -18,6 +18,7 @@ export const StyledCard = styled.div`
 
   h2 {
     text-align: center;
+    font-size: 2rem;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.secondary};
   }

@@ -21,28 +21,23 @@ export const StyledContact = styled.div`
     max-width: 90%;
   }
 
-  button {
+  #btn {
     background-color: ${({ theme }) => theme.colors.secondary};
   }
-  button:hover {
+  #btn:hover {
     background-color: ${({ theme }) => theme.colors.tertiary};
   }
 
   #alert {
     color: #fff;
     background-color: green;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    /* display: none; */
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 400px) {
     padding: 40px 0;
 
     h1 {
       font-size: 30px;
     }
   }
-
 `;
