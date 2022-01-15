@@ -7,7 +7,7 @@ export const StyledCard = styled.div`
   justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   margin: 40px 0;
   padding: 40px;
   flex-direction: ${({ layout }) => layout || "row-reverse"};

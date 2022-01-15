@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.colors.body};
-  width: 900px;
+  width: 1400px;
   max-width: 90vw;
-  padding: 0 50px;
   margin: 0 auto;
 
   .link {

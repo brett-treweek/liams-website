@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 const theme = {
   colors: {
-    dark: "#808080",
+    dark: "#818181",
     nav: "#E9FCFF",
     header: "#000",
     body: "#FDFDFD",

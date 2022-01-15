@@ -21,9 +21,13 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <StyledLogo>
-        <img src="./images/Logo.jpg" alt="" />
-      </StyledLogo>
+        <StyledLogo>
+          <img
+            src="./images/Logo.webp"
+            alt="own a home wa logo, blue and grey"
+          />
+          <h3>Liam Whinfield New Homes</h3>
+        </StyledLogo>
       <Flex jc="space-evenly" ai="center" id="flexContainer">
         <div>
           <h2>Hello, I'm</h2>
@@ -31,11 +35,12 @@ const Header = () => {
             Liam<Bluedot>.</Bluedot>
           </h1>
           <p>
-            I'm a new home sales consultant where it's my job to make home
-            ownership as easy and stress free as possible.
+            I'm a new home sales consultant based in Perth, Western Australia -
+            It's my job to make home ownership as easy and stress free as
+            possible.
           </p>
           <p>
-            Let me help you build your dream home. Its easier and more fun than
+            Let me help you get into the market. Its easier and more fun than
             you think.
           </p>
           <Flex jc="space-around">
@@ -78,7 +83,7 @@ const Header = () => {
           </Flex>
         </div>
 
-        <Image src="./images/Liam.jpg" alt="portrait of Liam" />
+        <Image src="./images/Liam.webp" alt="portrait of Liam" />
       </Flex>
     </StyledHeader>
   );

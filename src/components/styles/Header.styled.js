@@ -3,17 +3,21 @@ import styled from "styled-components";
 export const Image = styled.img`
   width: 500px;
   max-width: 40vw;
+
+  @media (max-width: 450px) {
+    max-width: 80vw;
+    margin-bottom: 40px;
+  }
 `;
 
 export const StyledHeader = styled.header`
-  width: 1200px;
+  width: 1400px;
   max-width: 90vw;
   height: 75vh;
   margin: 20px auto;
   align-items: flex-start;
 
   h1 {
-    /* color: #fff; */
     text-align: center;
     font-size: 80px;
     font-weight: 500;
@@ -25,7 +29,6 @@ export const StyledHeader = styled.header`
     font-size: 55px;
     font-weight: 400;
     margin: 0;
-    /* color: #fff; */
   }
 
   p {
@@ -33,7 +36,6 @@ export const StyledHeader = styled.header`
     max-width: 90vw;
     text-align: justify;
     z-index: 10;
-    /* color: #fff; */
   }
 
   a {
@@ -52,7 +54,7 @@ export const StyledHeader = styled.header`
     height: 150px;
     font-size: 20px;
     border-radius: 50%;
-    margin: 40px 40px 80px 40px;
+    margin: 60px auto;
     transition: all 0.4s ease;
   }
 
@@ -79,31 +81,25 @@ export const StyledHeader = styled.header`
     }
 
     button {
-      background-color: ${({ theme }) => theme.colors.secondary};
+      background-color: ${({ theme }) => theme.colors.tertiary};
       width: 100px;
       height: 100px;
       font-size: 15px;
-      margin: 20px;
+      margin: 40px;
     }
   }
 
   @media (max-width: 450px) {
     height: auto;
+    margin: 5px auto;
 
     #flexContainer {
-      flex-direction: column;
-    }
-
-    button {
-      background-color: ${({ theme }) => theme.colors.secondary};
-      width: 100px;
-      height: 100px;
-      font-size: 15px;
-      margin: 20px;
+      flex-direction: column-reverse;
     }
 
     h1 {
       font-size: 55px;
+      margin: 0 0 20px 0;
     }
     h2 {
       font-size: 45px;
@@ -111,9 +107,6 @@ export const StyledHeader = styled.header`
     p {
       max-width: 80vw;
       font-size: 18px;
-    }
-    img {
-      max-width: 80vw;
     }
   }
 `;

@@ -86,9 +86,9 @@ const Contact = () => {
           Submit
         </Button>
       </Box>
-      <Alert id="alert" variant="outlined" severity="success">
+      {/* <Alert id="alert" variant="outlined" severity="success">
         Email Sent - Ill get back soon!
-      </Alert>
+      </Alert> */}
     </StyledContact>
   );
 };
