@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Snackbar, Alert, Box, TextField, Button, Slide } from "@mui/material";
+import { Snackbar, Alert, Box, TextField, Button, Slide, MenuItem } from "@mui/material";
 import { StyledContact } from "./styles/Contact.styled";
 import emailjs from "emailjs-com";
 
@@ -39,6 +39,10 @@ const incomeBracket = [
     value: "30k-60k",
     label: "$30k-$60k",
   },
+  {
+    value: "Id_rather_not_say",
+    label: "Id rather not say",
+  },
 ];
 
 const Contact = () => {
@@ -58,13 +62,13 @@ const Contact = () => {
     setOpen(false);
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (event) => {
+    event.preventDefault();
     emailjs
       .sendForm(
         "service_r1o1bg2",
         "template_lff938p",
-        e.target,
+        event.target,
         "user_EUQIT1kNZJfWl6ouFWojf"
       )
       .then(
@@ -76,16 +80,23 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    event.target.reset();
 
     console.log("you sucssefully submited email");
   };
 
   return (
-    <StyledContact>
+    <StyledContact id="contactForm">
       <h1>Lets Get In Touch!</h1>
 
-      <Box component="form" Validate onSubmit={sendEmail}>
+      <Box
+        component="form"
+        Validate
+        onSubmit={sendEmail}
+        sx={{
+          
+        }}
+      >
         <TextField
           name="name"
           className="textField"
@@ -126,17 +137,13 @@ const Contact = () => {
           className="textField"
           value={houseStyle}
           onChange={handleHouseStyleChange}
-          variant="outlined"
           fullWidth
-          SelectProps={{
-            native: true,
-          }}
           helperText="Optionally select size of house"
         >
           {houseStyles.map((option) => (
-            <option key={option.value} value={option.value}>
+            <MenuItem key={option.value} value={option.value}>
               {option.label}
-            </option>
+            </MenuItem>
           ))}
         </TextField>
         <TextField
@@ -145,17 +152,13 @@ const Contact = () => {
           className="textField"
           value={income}
           onChange={handleIncomeChange}
-          variant="outlined"
           fullWidth
-          SelectProps={{
-            native: true,
-          }}
           helperText="Optionally provide income bracket"
         >
           {incomeBracket.map((option) => (
-            <option key={option.value} value={option.value}>
+            <MenuItem key={option.value} value={option.value}>
               {option.label}
-            </option>
+            </MenuItem>
           ))}
         </TextField>
         <TextField

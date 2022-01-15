@@ -12,22 +12,17 @@ import {
 import { StyledLogo } from "./styles/Logo.styled";
 
 const Header = () => {
-  const scrollToBottom = () => {
-    window.scroll({
-      top: 4000,
-      behavior: "smooth",
-    });
+  const scrollToContact = () => {
+    const section = document.querySelector("#contactForm");
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
     <StyledHeader>
-        <StyledLogo>
-          <img
-            src="./images/Logo.webp"
-            alt="own a home wa logo, blue and grey"
-          />
-          <h3>Liam Whinfield New Homes</h3>
-        </StyledLogo>
+      <StyledLogo>
+        <img src="./images/Logo.webp" alt="own a home wa logo, blue and grey" />
+        <h3>Liam Whinfield New Homes</h3>
+      </StyledLogo>
       <Flex jc="space-evenly" ai="center" id="flexContainer">
         <div>
           <h2>Hello, I'm</h2>
@@ -45,7 +40,7 @@ const Header = () => {
           </p>
           <Flex jc="space-around">
             <Button
-              onClick={scrollToBottom}
+              onClick={scrollToContact}
               className="btn"
               variant="contained"
             >

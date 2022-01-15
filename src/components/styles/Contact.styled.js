@@ -19,6 +19,7 @@ export const StyledContact = styled.div`
   .textField {
     margin: 10px;
     max-width: 90%;
+    text-align: start;
   }
 
   #btn {
