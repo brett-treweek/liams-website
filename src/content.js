@@ -23,7 +23,7 @@ const content = [
     {
         id: 4,
         title: 'No Deposit?' ,
-        body: `I still need a deposit right? Maybe you don’t! $10,000 First home owner grant - Is that basically free money? Do I need to pay stamp duty? Can I afford to buy my own home? Is the construction process easy for me to understand?`,
+        body: `I still need a deposit right? Maybe you don’t! Am I eligible for any government grants? Do I need to pay stamp duty? Can I afford to buy my own home? Is the construction process easy for me to understand? - I can answer all of your questions.`,
         image: 'piggybank.webp',
         alt: 'piggybank'
     }
