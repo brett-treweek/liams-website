@@ -19,7 +19,7 @@ body{
     font-size: 1.15em;
 }
 
-p{
+p, li{
     line-height: 1.5;
 }
 

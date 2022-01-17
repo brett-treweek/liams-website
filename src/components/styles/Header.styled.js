@@ -38,16 +38,6 @@ export const StyledHeader = styled.header`
     z-index: 10;
   }
 
-  a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.secondary};
-    transition: all 0.4s ease;
-  }
-
-  a:hover {
-    color: ${({ theme }) => theme.colors.tertiary};
-  }
-
   button {
     background-color: ${({ theme }) => theme.colors.tertiary};
     width: 150px;
@@ -63,7 +53,7 @@ export const StyledHeader = styled.header`
   }
 
   svg {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.tertiary};
     font-size: 2.5rem;
     text-decoration: none;
     transition: all 0.3s ease-in;
@@ -72,7 +62,7 @@ export const StyledHeader = styled.header`
   }
 
   svg:hover {
-    color: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
   @media (max-width: 1150px) {

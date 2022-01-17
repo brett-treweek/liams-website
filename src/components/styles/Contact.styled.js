@@ -23,10 +23,10 @@ export const StyledContact = styled.div`
   }
 
   #btn {
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.tertiary};
   }
   #btn:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
+    background-color: ${({ theme }) => theme.colors.secondary};
   }
 
   #alert {
