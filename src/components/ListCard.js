@@ -1,6 +1,5 @@
 import { StyledCard } from './styles/Card.styled';
 import { Flex } from './styles/Flex.styled';
-import content from '../content';
 
 export default function ListCard({ item: { id, title, body, image, alt } }) {
 	return (

@@ -43,7 +43,7 @@ export const StyledCard = styled.div`
 			width: 40vw;
 		}
 
-		p {
+		p, ul {
 			width: 40vw;
 		}
 	}
@@ -52,7 +52,7 @@ export const StyledCard = styled.div`
 		flex-direction: column;
 		padding: 20px;
 
-		p {
+		p, ul {
 			font-size: 16px;
 			margin: 10px auto;
 			width: 80vw;

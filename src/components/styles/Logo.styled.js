@@ -4,6 +4,7 @@ export const StyledLogo = styled.div`
   width: 100%;
   margin-bottom: 50px;
   display: flex;
+  gap: 0.3rem;
   align-items: end;
   justify-content: start;
 
