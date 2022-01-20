@@ -2,7 +2,6 @@ import { StyledFooter } from "./styles/Footer.styled";
 import { Flex } from "./styles/Flex.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin, faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons"
 
 export default function Footer() {
   return (
@@ -37,8 +36,7 @@ export default function Footer() {
             </div>
       </Flex>
       <Flex jc="center" ai="center">
-      <FontAwesomeIcon icon={faCopyright} id="copyright"/>
-      <p> &emsp; 2022 Brett Treweek</p>
+      <p>2022 Brett Treweek</p>
       </Flex>
     </StyledFooter>
   );

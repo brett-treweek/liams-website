@@ -19,7 +19,7 @@ export const StyledFooter = styled.footer`
   }
 
   #copyright, p {
-    font-size: 14px;
+    font-size: 10px;
     opacity: 0.7;
   }
 
