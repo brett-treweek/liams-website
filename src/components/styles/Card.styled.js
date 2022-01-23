@@ -30,6 +30,10 @@ export const StyledCard = styled.div`
 		margin: 0 auto;
 	}
 
+	ul {
+		text-align: left;
+	}
+
 	li::marker {
 		color: ${({ theme }) => theme.colors.tertiary};
 	}
@@ -43,7 +47,8 @@ export const StyledCard = styled.div`
 			width: 40vw;
 		}
 
-		p, ul {
+		p,
+		ul {
 			width: 40vw;
 		}
 	}
@@ -52,7 +57,8 @@ export const StyledCard = styled.div`
 		flex-direction: column;
 		padding: 20px;
 
-		p, ul {
+		p,
+		ul {
 			font-size: 16px;
 			margin: 10px auto;
 			width: 80vw;

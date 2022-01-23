@@ -1,19 +1,20 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Image = styled.img`
-  width: 500px;
-  max-width: 40vw;
+	width: 500px;
+	max-width: 40vw;
+	object-fit: contain;
 
-  @media (max-width: 450px) {
-    max-width: 80vw;
-    margin-bottom: 40px;
-  }
+	@media (max-width: 450px) {
+		max-width: 80vw;
+		margin-bottom: 40px;
+	}
 `;
 
 export const StyledHeader = styled.header`
 	width: 1400px;
 	max-width: 90vw;
-	height: 75vh;
+	/* height: 75vh; */
 	margin: 20px auto;
 	align-items: flex-start;
 
@@ -64,6 +65,10 @@ export const StyledHeader = styled.header`
 	svg:hover {
 		color: ${({ theme }) => theme.colors.tertiary};
 	}
+
+	/* @media (min-height: 700px) {
+		min-height: 100vh;
+	} */
 
 	@media (max-width: 1150px) {
 		p {
