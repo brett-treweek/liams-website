@@ -26,7 +26,8 @@ Final Product
 - Was very useful to quickly get feedback from liam on his preferred design before commiting to the build.
 
 ### Styled Components
-- A Styling library for React. I enjoyed using styled components as it results in cleaner component scoped css.
+- A Styling library for React.
+- I enjoyed using styled components as it results in cleaner, component scoped css and made making responsiveness for mobile devices easier.
 
 ### Material UI
 - A library of ready to go components for React which was great to use.
