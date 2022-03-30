@@ -12,6 +12,7 @@ import {
 import { StyledLogo } from "./styles/Logo.styled";
 
 const Header = () => {
+  
   const scrollToContact = () => {
     const section = document.querySelector("#contactForm");
     section.scrollIntoView({ behavior: "smooth", block: "start" });
